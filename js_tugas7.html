@@ -9,8 +9,7 @@
 </head>
 
 <body>
-    <div>
-        <form id="form">
+    <div class="container">
     <script>
         class gempa {
             constructor(lokasi, skala) {
@@ -21,21 +20,21 @@
             dampak () {
                let dampak;
                if (this.skala >= 0 && this.skala <= 2  ) {
-                   dampak = "Dampaknya tidak terasa";
+                   dampak = "Dampaknya Tidak Terasa";
                }  else if(this.skala > 2 && this.skala <= 4) {
-                   dampak = "Dampaknya bangunan retak-retak";
+                   dampak = "Dampaknya Bangunan Retak-retak";
                } else if (this.skala > 4 && this.skala <= 6) {
-                   dampak = "Dampaknya bangunan roboh";
+                   dampak = "Dampaknya Bangunan Roboh";
                } else if( this.skala > 6) {
                    dampak = "Dampaknya bangunan roboh dan berpotensi tsunami";
                }
-               else {dampak = "input skala tidak valid"}
+               else {dampak = "Input Skala Tidak Valid"}
                document.write(`Lokasi Gempa : ${this.lokasi}
                <br/> Skala : ${this.skala}
                <br/> Dampak : ${dampak} <hr/>`);
             }
         }
-         let negara = ["indonesia", "Brunei", "Kuala Lumpur", "Moscow", "Bangkok", "Tokyo", "Banten", "Seoul", "jakarta", "Disney", "Argentina"];
+         let negara = ["indonesia", "Brunei", "Kuala Lumpur", "Moscow", "Bangkok", "Tokyo", "Banten", "Seoul", "Jakarta", "Disney", "Argentina"];
         let skalaGempa = [2.3, 4.2, 3.2, 7.8, 9.0, 3.2, 8.5, 4.2, 3.2, 5.4, 7.6];
         for(let x in negara){
                 
@@ -44,6 +43,5 @@
         }
     </script>
     </form>
-    </div>
 </body>
 </html>
