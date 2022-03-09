@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+        <title>latihan effect 1</title>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript">
+
+            $("document").ready(function () {
+                for(let i=1; i<= 3; i++) {
+                $(`.flip${i}`).click(function () {
+                    $(`.pesan${i}`).slideToggle("slow");
+                });
+            }
+                for(let i=1; i<=4; i++) {
+                $(`.gambar.${i}`).click(function() {
+                    $(`.gambar.${i}`).css({
+                        "background" : `url(image/hewan${i}.jpg)`,
+                        "background-size" : "cover"
+                    })
+                    $('<audio></audio>').attr({
+                        "src" : `sound/hewan${i}.mp3`,
+                        "autoplay" : "autoplay"
+
+                    }).appendTo("body");
+
+                })
+            }
+            });
+        
+        
+        </script>
+        <style type="text/css">
+            *{
+                box-sizing: border-box;
+            }
+                .card{
+                    display: flex;
+                    width: 90%;
+                    margin: auto;
+                    justify-content: space-around;
+                    padding: 20px;
+                    margin-top: 100px;
+                }
+
+                .animal{
+                    width: 150px;
+                    background: lightseagreen;
+                    font-family: 'Times New Roman', Times, serif;
+                }
+
+                .gambar{
+                    width: 100%;
+                    height: 150px;                
+                }
+
+                .animal h1{
+                    text-align: center;
+                }
+
+            div.pesan1, div.pesan2, div.pesan3 {
+                height: auto;
+                width: auto;
+                display: none;
+            }
+
+            div.pesan1, div.pesan2, div.pesan3,
+            p.flip1, p.flip2, p.flip3 {
+                margin: 0px;
+                padding: 5px;
+                text-align: justify;
+                width: 75%;
+                background: lightblue;
+                border: 10px ridge darkgrey;
+            }
+            .flip1,.flip2,.flip3{
+                text-align: center !important;
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="card">
+            <div class="animal">
+
+                <div class="gambar 1">
+                </div>
+                <h1>Babi</h1>
+            </div>
+            <div class="animal">
+
+                <div class="gambar 2">
+                </div>
+                <h1>Kuda</h1>
+            </div>
+
+            <div class="animal">
+                <div class="gambar 3">
+                </div>
+                <h1>Kambing</h1>
+            </div>
+
+            <div class="animal">
+                <div class="gambar 4">
+                </div>
+                <h1>Sapi</h1>
+            </div>
+
+        </div>
+        <audio></audio>
+
+        <!-- Tugas 2 -->
+        <center>
+            <div class="pesan1">
+                <h2 align="center">NF COMPUTER</h2>
+              <p>  NF COMPUTER adalah bagian dari grup Nurul Fikri yang telah dipercaya oleh masyarakat Indonesia di bidang pendidikan dan peningkatan 
+                  sumber daya manusia selama lebih dari 24 tahun.
+                 NF COMPUTER dirintis sejak tahun 1994 dan merupakan sebuah lembaga di bidang pendidikan 
+                     pelatihan IT (Information Technology). Kami berkomitmen menjadi partner perusahaan Anda 
+                     dalam mengembangkan kemampuan serta keahlian SDM di bidang IT. Dengan komitmen tersebut, 
+                    kami mempersiapkan tim pengajar yang professional dan berpengalaman di bidang IT.
+                </p>
+                <p>Di Era Industri 4.0 saat ini, teknologi informasi berkembang sangat cepat, karena itu pengembangan sumber daya manusia di bidang IT menjadi sebuah kebutuhan yang perlu diprioritaskan. NF COMPUTER menjadi jawaban yang tepat atas kebutuhan pengembangan kompetensi IT. 
+                    Sehingga kami selalu berusaha untuk terus berinovasi terhadap teknologi terbaru.</p>
+            </div>
+            <p class="flip1"> Company Profile</p>
+        </center>
+
+        <center>
+            <div class="pesan2">
+               <h2 align="center"> Visi </h2>
+            <p> Menjadi institusi pelatihan yang kompeten dan profesional di bidang pendidikan teknologi informasi dan komunikasi di berbagai wilayah indonesia.</p>
+                
+               <h2 align="center"> Misi </h2>
+               <p> Membangun, memelihara dan mengembangkan institusi pelatihan bisnis berdaya saing tinggi, berkarakter profesional, kompeten, mengedepankan integritas dan tanggung jawab sosial, dengan mengembangkan dan menyediakan produk produk pendidikan dan pelatihan teknologi informasi dan komunikasi prima.
+                </p>
+                
+            </div>
+            <p class="flip2"> Visi & Misi</p>
+        </center>
+        
+
+        <center>
+            <div class="pesan3">
+                <h2 align="center">Deskripsi Bisnis</h2>
+                <p>
+                NF COMPUTER menyelenggarakan Pelatihan dan Pendidikan di bidang Teknologi Informasi dan Komunikasi (IT Training) yang dibagi menjadi lima produk.
+                Pelatihan (training) ini dibagi dalam beberapa kategori produk yaitu:</p>                 
+                <ul>
+                    <li>Public Class, merupakan short course bidang TIK (Teknologi Informasi dan Komunikasi) yang berbasis Linux maupun Windows.</li>
+                    <li>Exclusive Class, merupakan paket training yang diberikan kepada customer dengan durasi 6-8 jam perhari dengan jumlah peserta minimal 2 orang dan pelaksanaan pelatihannya di NF Computer.</li>
+                    <li>In House/In Company Training, yaitu pelatihan TIK yang dikustomisasi untuk kebutuhan perusahaan-perusahaan.</li>  
+                </ul>
+                Paket bisnis khusus dibagi ke dalam beberapa kategori produk yang dikelola secara profesional oleh NF COMPUTER yaitu :
+                <ul>
+                    <li>Kerjasama Pendidikan Sekolah, yaitu Divisi khusus pendidikan sekolah dimana NF COMPUTER bekerjasama dalam hal : Kerjasama pembangunan Lab Komputer, Pengajaran Komputer dan kombinasi antara keduanya.</li>
+                    <li>Usulan Produk lain: Produk-produk yang menurut lokasi diminati oleh pasar tapi belum ada dalam daftar produk pelatihan dan pendidikan NF COMPUTER, dapat diajukan oleh cabang untuk menjadi produk yang dipertimbangkan sebagai produk dan akan menjadi bagian dari penyelenggaraan pelatiahan dan pendidikan di cabang tersebut pada periode yang dianggap tepat oleh NF COMPUTER.</li>
+                </ul>
+                
+            </div>
+            <p class="flip3"> Deskripsi Bisnis</p>
+        </center>
+    </body>
+
+</html>
