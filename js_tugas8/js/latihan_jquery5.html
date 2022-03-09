@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>latihan event 2</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+$("document").ready(function () {
+$("div").dblclick(function () {
+$(this).css({
+background: "blue"
+});
+});
+});
+    
+</script>
+<style type="text/css">
+    div {
+    background: greenyellow;
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin: 10px;
+    cursor: pointer;
+    }
+    </style>
+    </head>
+    <body>
+    <p>klik dua kali pada setiap kotak untuk mengubah
+    warnanya</p>
+    <div class="kuda"> Ini Hewan Kuda</div>
+    <div class="kambing">Ini Hewan Kambing</div>
+    <div class="babi"> Ini Hewan Babi</div>
+    <div class="sapi">Ini Hewan Sapi</div>
+    </body>
+    </html>
+    
